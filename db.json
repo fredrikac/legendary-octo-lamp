@@ -1,0 +1,61 @@
+{
+  "vehicles": [
+    {
+      "vehicleId": 1848,
+      "registrationNumber": "AR27966",
+      "vinNumber": "TMBJE73T0F9025084",
+      "manufacturer": "SKODA",
+      "model": "SUPERB",
+      "vehicleName": "SKODA, SUPERB",
+      "version": "2.0 TDI 140 COMBI",
+      "modelYear": "2015",
+      "mileage": 162000,
+      "transmission": "Manual",
+      "fuelType": "Diesel",
+      "comment": ""
+    },
+    {
+      "vehicleId": 1853,
+      "registrationNumber": "BX10114",
+      "vinNumber": "WVGZZZ1TZFW035798",
+      "manufacturer": "VOLKSWAGEN",
+      "model": "TOURAN",
+      "vehicleName": "VOLKSWAGEN, TOURAN",
+      "version": "2.0 TDI BMT 140 DSG6",
+      "modelYear": "2015",
+      "mileage": 177000,
+      "transmission": "Automatic",
+      "fuelType": "Diesel",
+      "comment": ""
+    },
+    {
+      "vehicleId": 1859,
+      "registrationNumber": "AL73738",
+      "vinNumber": "TMBAG9NE6E0061014",
+      "manufacturer": "SKODA",
+      "model": "OCTAVIA",
+      "vehicleName": "SKODA OCTAVIA 1.6 TDI 105 HK Hatchback",
+      "version": "1.6 TDI 105 HATCHBACK",
+      "modelYear": "2014",
+      "mileage": 109000,
+      "transmission": "Manual",
+      "fuelType": "Diesel",
+      "comment": ""
+    }
+  ],
+  "users" : [
+    {
+    "firstName": "Fredrika",
+    "lastName": "Carlsén",
+    "userEmail": "fredrika.carlsen@gmail.com"
+    }, {
+    "firstName": "Niklas",
+    "lastName": "Gren",
+    "userEmail": "nisse@gmail.com"
+  }, {
+    "firstName": "Linnea",
+    "lastName": "Bäcklund",
+    "userEmail": "nea@gmail.com"
+  }
+]
+}
