@@ -17,6 +17,7 @@ describe("Routing", () => {
 
     //Test if we click on Users in navbar...
     await view.click(screen.getByText('Users'));
+    //Här kan man lägga till t.ex. ett objekt med exact: false efter users, så får man en ungefärlig jämförelse.
     expect(screen.getByText('Users')).toBeInTheDocument();
 
     //Test if we can navigate to Add User in navbar...
