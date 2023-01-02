@@ -11,7 +11,7 @@ const UserList = () => {
 
   return (
     <section data-testid='user-list-component'>
-      <h1>All users</h1>
+      <h1>All Users</h1>
       <ul>
         {users.map((user, i)=> (
           <li key={i}>

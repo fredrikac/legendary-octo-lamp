@@ -1,0 +1,21 @@
+Anteckningar lektion 4
+
+Fråga: går det att hitta element mha klassnamn? 
+Ja, men man gör helst inte det eftersom testning syftar till användarens perspektiv och klassnamn för styling är inte något användaren ser eller har koll på. 
+Det vi testar är förfarande och beteende användaren har i applikationen. Man testar på samma sätt som användaren skulle använda applikationen. Inte helt svart eller vitt, man kan t.ex. absolut testa dynamisk CSS, t.ex. där man togglar klassnamn för att förändra beteende. 
+
+Fråga: vad är mockning?
+Istället för att göra riktiga nätverksanrop så fångar vi upp anropet och använder fejk-data. 
+
+
+Vi uppdaterar paketet till följande version:  "@testing-library/user-event": "^14.4.3"
+Det gjorde jag genom att ändra versionsnumret i package.json, stoppa test-servern, sen köra npm install. Då uppdaterades det! Good to know. 
+När jag sedan körde igång test-servern så failade ett test som tidigare passerat, UserLogin component - Form interaction. 
+Det som hände med det uppdaterade paketet var att userEvent.type returnerar ett prompt. Därför behöver testet vara asynkront för att fungera. Lösningen är alltså att lägga till async och sedan await på de båda userEventen.
+
+Tänk om vi hade userEvent i tusentals tester? Då hade det inte varit så kul... Därför måste man vara väldigt försiktig med att uppdatera paket, för de kan ge följdeffekter. Det är en nackdel med react, som består av många, många paket. Där kan ramverk som Vue och Angular vara lättare att handskas med. 
+
+Mockning - hur vi kan lägga till en användare
+Se till att användaren läggs till i db.json.
+Sätt upp testet och installera en dependency - npm install -D msw
+Stort D anger att det bara är för utveckling.

@@ -24,7 +24,7 @@ describe('VehicleList component', () => {
 
 
   describe('VehicleList API request', () => {
-    test('Renders a list of vehicles if request is successful', async ()=> {
+    test.skip('Renders a list of vehicles if request is successful', async ()=> {
       //Arrange
       setup();
       //Här vill vi använda en mock-funktion för att ta över kontrollen över fetch-anropet.

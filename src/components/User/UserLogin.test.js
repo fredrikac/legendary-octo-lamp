@@ -33,14 +33,14 @@ describe('UserLogin component', ()=> {
 
 
   describe('Form interaction', ()=> {
-    test('Login button should be enabled when username and password are correct', ()=> {
+    test('Login button should be enabled when username and password are correct', async ()=> {
       setup();
       const usernameInput = screen.getByLabelText('Username/Email');
       const passwordInput = screen.getByLabelText('Password');
       const loginBtn = screen.getByRole('button', { name: 'Login'});
 
-      userEvent.type(usernameInput, 'Testuser');
-      userEvent.type(passwordInput, 'Pa$$w0rd');
+      await userEvent.type(usernameInput, 'Testuser');
+      await userEvent.type(passwordInput, 'Pa$$w0rd');
 
       expect(loginBtn).toBeEnabled();
     })
